@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "bento/ubuntu-20.04-arm64"
   config.vm.hostname = "node01"
-  config.vm.network "private_network", 
+  config.vm.network "private_network", type: "dhcp"
 
   # parallels desktop for mac configs
   # config.vm.provider "parallels" do |prl|
